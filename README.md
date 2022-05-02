@@ -11,7 +11,7 @@
 ## [App.js](https://github.com/zesuma/singlestone-endless-challenge/blob/main/src/App.js)
 
 For the How It Works section, I sorted the data by ascending order by sorting the stepNumbers: 
-`.sort((a,b) => a.stepNumber > b.stepNumber ? a : b)`
+`.sort((a,b) => a.stepNumber > b.stepNumber ? 1 : -1)`
 
 Then used .map to loop through:
 
