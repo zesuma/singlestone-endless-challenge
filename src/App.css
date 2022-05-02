@@ -30,6 +30,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 .is-loading {
@@ -52,8 +53,9 @@ body {
     padding: 0 1em;
 }
 
+/* header section */
 .bg-dark {
-    background-color: var(--dark-grey-color);
+    background-color: #222;
 }
 
 .logo__image {
@@ -61,6 +63,7 @@ body {
     padding: 1em 0;
 }
 
+/* hero section */
 .hero {
     background-image: url(./photo-couch.jpg);
     background-size: cover;
@@ -73,7 +76,7 @@ body {
 
 .hero__box {
     max-width: 41em;
-    margin-block-end: 4em;
+    margin-block-end: 2em;
 }
 
 .hero__subtitle, 
@@ -84,13 +87,13 @@ body {
 
 .hero__subtitle, 
 .hero__description {
-    font-size: clamp(1rem, 1vw, 1.25rem);
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
     line-height: 1.5;
 }
 
 .hero__title {
-    font-size: clamp(2.75rem, 3.5vw, 3.5rem);
-    line-height: 1.15;
+    font-size: clamp(2.75rem, 3vw, 3.5rem);
+    line-height: 1.3;
     font-weight: 300;
     margin: 0;
 }
@@ -104,6 +107,7 @@ body {
     color: var(--primary-color);
 }
 
+/* buttons */
 .btn {
     padding: .5em 1.75em;
     color: var(--dark-grey-color);
@@ -123,17 +127,20 @@ body {
     background-color: #f2f1ef;
 }
 
+/* section styles */
 section {
-    padding-top: 2.5em;
+    padding-top: 2em;
     padding-bottom: 2.5em;
 }
 
 .section__title {
     text-align: center;
-    margin: 0 0 2rem; 
+    margin: 0 0 .25rem; 
     font-size: clamp(2rem, 1vw, 2rem);
+    letter-spacing: 1px; 
 }
 
+/* cards */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -159,11 +166,10 @@ section {
     border-bottom: 5px solid var(--secondary-color);
     display: inline-block;
     margin: auto;
-    padding-bottom: .25em;
 }
 
 .card__title {
-    font-size: clamp(1.5rem, 1vw, 1.5rem);
+    font-size: clamp(1.25rem, 1vw, 1.25rem);
     margin: 1em 0 0.5em;
     text-transform: uppercase;
 }
@@ -171,13 +177,17 @@ section {
 .card__description {
     font-size: clamp(1rem, 1vw, 1rem);
     max-width: 15em;
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
+/* media queries */
 @media (min-width:1200px) {
     .cards {
         gap: 2rem;
         justify-content: space-evenly;
+    }
+    .hero__box {
+        margin-block-end: 4em;
     }
 }
 
