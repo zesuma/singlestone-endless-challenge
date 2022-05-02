@@ -105,7 +105,7 @@ body {
 }
 
 .btn {
-    padding: .25em 1.5em;
+    padding: .5em 1.75em;
     color: var(--dark-grey-color);
     font-size: clamp(1.125rem, 1vw, 1.125rem);
     font-weight: 500;
@@ -124,8 +124,8 @@ body {
 }
 
 section {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
 }
 
 .section__title {
@@ -147,11 +147,6 @@ section {
     box-sizing: border-box;
     max-width: 21.5em;
     transition: all .3s ease-in-out;
-}
-
-.card:hover,
-.card:active {
-    transform: all .3s ease-in-out;
 }
 
 .card:hover,
