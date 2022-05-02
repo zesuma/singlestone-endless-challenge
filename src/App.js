@@ -9,8 +9,6 @@ function App() {
   console.log(result, error, isLoading, "from hook")
   if(isLoading) return <h2 className="is-loading">Is loading.. </h2>
 
-
-
   return (
     <>
       <Header />
@@ -41,7 +39,6 @@ function App() {
                         </p>
                     </div>
                   ))
-                  
                 }
                 </div>
             </div>
