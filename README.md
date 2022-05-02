@@ -8,6 +8,21 @@
 
 [Hero Component](https://github.com/zesuma/singlestone-endless-challenge/blob/main/src/components/Hero.jsx) for the static Hero content. Title, description text and cta button. Also holds the background image.
 
+## [App.js](https://github.com/zesuma/singlestone-endless-challenge/blob/main/src/App.js)
+
+For the How It Works section, I sorted the data by ascending order by sorting the stepNumbers: 
+`.sort((a,b) => a.stepNumber > b.stepNumber ? 1 : -1)`
+
+Then used .map to loop through:
+
+`.map(item => ...`
+
+Finally, I used .reduce to pull in the correct title and p for each card:
+
+`{item.versionContent.reduce((a, b) => a.effectiveDate > b.effectiveDate ? a : b).title}`
+
+`{item.versionContent.reduce((a, b) => a.effectiveDate > b.effectiveDate ? a : b).body}`
+
 
 
 
