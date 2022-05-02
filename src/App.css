@@ -8,9 +8,11 @@
 
 a {
     transition: all .3s ease-in-out;
+    text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active {
     filter:saturate(2.5)
 }
 
@@ -102,10 +104,6 @@ body {
     color: var(--primary-color);
 }
 
-a {
-    text-decoration: none;
-}
-
 .btn {
     padding: .25em 1.5em;
     color: var(--dark-grey-color);
@@ -148,6 +146,17 @@ section {
     text-align: center;
     box-sizing: border-box;
     max-width: 21.5em;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover,
+.card:active {
+    transform: all .3s ease-in-out;
+}
+
+.card:hover,
+.card:active {
+    transform: translateY(-10px);
 }
 
 .card__step {
@@ -155,6 +164,7 @@ section {
     border-bottom: 5px solid var(--secondary-color);
     display: inline-block;
     margin: auto;
+    padding-bottom: .25em;
 }
 
 .card__title {
