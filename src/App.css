@@ -45,7 +45,7 @@ body {
 
 /* container */
 .container {
-    max-width: 79vw;
+    max-width: 68vw;
     width: 100%;
     box-sizing: border-box;
     margin-left: auto;
@@ -130,13 +130,13 @@ body {
 
 /* section styles */
 section {
-    padding-top: 2em;
+    padding-top: 2.5em;
     padding-bottom: 2.5em;
 }
 
 .section__title {
     text-align: center;
-    margin: 0 0 .25rem; 
+    margin: 0 0 .4rem; 
     font-size: clamp(2rem, 1vw, 2rem);
     letter-spacing: 1px; 
 }
@@ -145,7 +145,7 @@ section {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     gap: 1em;
 }
