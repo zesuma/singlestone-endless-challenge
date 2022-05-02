@@ -27,7 +27,6 @@ function App() {
                   .sort((a,b) => a.stepNumber > b.stepNumber ? 1 : -1)
                   .map(item => (
                     <div key={item.id} className="card">
-                      {console.log("Whaaaat", result[3])}
                         <div className="card__step">
                            0{item.stepNumber}
                         </div>
