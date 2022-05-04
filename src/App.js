@@ -9,11 +9,26 @@ function App() {
   console.log(result, error, isLoading, "from hook")
   if(isLoading) return <h2 className="is-loading">Is loading.. </h2>
 
+  const heroContent = [
+    {
+      subTitle: 'New Games & Accessories',
+      title: `Monthly packages. 
+      Excitement delivered daily.`,
+      description: "What's the best way to shop for the latest video games and peripherals? How about never shopping at all? You'll get new stuff on your doorstep - every month.",
+      button: 'Get Started',
+    }
+  ]
+
   return (
     <>
       <Header />
       <main>
-        <Hero />
+        <Hero 
+          subTitle={heroContent[0].subTitle} 
+          title={heroContent[0].title} 
+          description={heroContent[0].description} 
+          button={heroContent[0].button}>
+        </Hero>
         <section className="how-it-works">
           <div className="container">
               <header className="section__header">

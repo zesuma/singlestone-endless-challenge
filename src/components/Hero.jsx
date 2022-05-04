@@ -1,24 +1,20 @@
 import PropTypes from 'prop-types'
 
-function Hero() { 
-    const heroSubTitle = 'New Games & Accessories'
-    const heroTitle = `Monthly packages. 
-    Excitement delivered daily.`
-    const heroDescription = "What's the best way to shop for the latest video games and peripherals? How about never shopping at all? You'll get new stuff on your doorstep - every month."
-    const heroButton = 'Get Started'
+function Hero(props) { 
+    
     return (
         <section className="hero">
             <div className="container">
                 <div className="hero__box">
-                    <h2 className="hero__subtitle">{heroSubTitle}</h2>
+                    <h2 className="hero__subtitle">{props.subTitle}</h2>
                     <h1 className="hero__title">
-                        {heroTitle}
+                        {props.title}
                     </h1>
                     <p className="hero__description">
-                        {heroDescription}
+                        {props.description}
                     </p>
                     <a href="https://endless.com" className="btn hero__button">
-                        {heroButton}
+                        {props.button}
                     </a>
                 </div>
             </div>
